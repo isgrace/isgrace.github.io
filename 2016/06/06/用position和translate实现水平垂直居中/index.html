@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next muse use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -84,32 +84,25 @@
 
 
 
-<meta name="description" content="前言在CSS布局中，我们经常会遇到各种居中问题，一个看起来很简单的居中，实现起来却并不容易。作为一名初学者，最近更是深刻体会到了这个问题，
-场景浮动元素先来解决一个我遇到的问题，你正在做一个页头header，
-在父容器内水平垂直居中现在，有一个父容器container，里面只有一个不定宽块级元素，我们想让它在父容器内水平垂直居中
-方法原理">
+<meta name="description" content="最近练习CSS布局时经常遇到元素在容器内垂直居中的问题，我们先模拟一个场景">
 <meta property="og:type" content="article">
-<meta property="og:title" content="利用position和translate实现水平垂直居中">
-<meta property="og:url" content="http://yoursite.com/2016/06/06/利用position和translate实现水平垂直居中/index.html">
+<meta property="og:title" content="用position和translate实现水平垂直居中">
+<meta property="og:url" content="http://yoursite.com/2016/06/06/用position和translate实现水平垂直居中/index.html">
 <meta property="og:site_name" content="Grace's blog">
-<meta property="og:description" content="前言在CSS布局中，我们经常会遇到各种居中问题，一个看起来很简单的居中，实现起来却并不容易。作为一名初学者，最近更是深刻体会到了这个问题，
-场景浮动元素先来解决一个我遇到的问题，你正在做一个页头header，
-在父容器内水平垂直居中现在，有一个父容器container，里面只有一个不定宽块级元素，我们想让它在父容器内水平垂直居中
-方法原理">
-<meta property="og:updated_time" content="2016-06-06T10:02:01.196Z">
+<meta property="og:description" content="最近练习CSS布局时经常遇到元素在容器内垂直居中的问题，我们先模拟一个场景">
+<meta property="og:image" content="http://i1.buimg.com/057f436ede78e5d6.png">
+<meta property="og:updated_time" content="2016-06-07T11:10:43.429Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用position和translate实现水平垂直居中">
-<meta name="twitter:description" content="前言在CSS布局中，我们经常会遇到各种居中问题，一个看起来很简单的居中，实现起来却并不容易。作为一名初学者，最近更是深刻体会到了这个问题，
-场景浮动元素先来解决一个我遇到的问题，你正在做一个页头header，
-在父容器内水平垂直居中现在，有一个父容器container，里面只有一个不定宽块级元素，我们想让它在父容器内水平垂直居中
-方法原理">
+<meta name="twitter:title" content="用position和translate实现水平垂直居中">
+<meta name="twitter:description" content="最近练习CSS布局时经常遇到元素在容器内垂直居中的问题，我们先模拟一个场景">
+<meta name="twitter:image" content="http://i1.buimg.com/057f436ede78e5d6.png">
 
 
 
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
+    scheme: 'Muse',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -120,7 +113,7 @@
   };
 </script>
 
-  <title> 利用position和translate实现水平垂直居中 | Grace's blog </title>
+  <title> 用position和translate实现水平垂直居中 | Grace's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -165,7 +158,7 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+  <p class="site-subtitle">记录时光</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -212,6 +205,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -250,7 +253,7 @@
             
             
               
-                利用position和translate实现水平垂直居中
+                用position和translate实现水平垂直居中
               
             
           </h1>
@@ -268,13 +271,32 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/06/06/利用position和translate实现水平垂直居中/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/06/利用position和translate实现水平垂直居中/" itemprop="commentsCount"></span>
+                <a href="/2016/06/06/用position和translate实现水平垂直居中/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/06/用position和translate实现水平垂直居中/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -285,6 +307,11 @@
           
           
 
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
           
         </div>
       </header>
@@ -297,10 +324,11 @@
       
 
       
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在CSS布局中，我们经常会遇到各种居中问题，一个看起来很简单的居中，实现起来却并不容易。作为一名初学者，最近更是深刻体会到了这个问题，<!-- 通过查找资料和各种测试后，发现position加translate属性基本可以实现所有元素的水平垂直居中，总结一下，希望对大家有一点帮助。 --></p>
-<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><h4 id="浮动元素"><a href="#浮动元素" class="headerlink" title="浮动元素"></a>浮动元素</h4><p>先来解决一个我遇到的问题，你正在做一个页头header，</p>
-<h4 id="在父容器内水平垂直居中"><a href="#在父容器内水平垂直居中" class="headerlink" title="在父容器内水平垂直居中"></a>在父容器内水平垂直居中</h4><p>现在，有一个父容器container，里面只有一个不定宽块级元素，我们想让它在父容器内水平垂直居中</p>
-<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3>
+        <p>最近练习CSS布局时经常遇到元素在容器内垂直居中的问题，我们先模拟一个场景</p>
+<p><img src="http://i1.buimg.com/057f436ede78e5d6.png" alt=""></p>
+<a id="more"></a>
+<p>现在我们假设容器的宽度是用百分数来表示的，而高度是靠元素撑开的，；</p>
+
       
     </div>
 
@@ -330,13 +358,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/06/05/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/06/07/深入理解DOM事件/" rel="prev" title="深入理解DOM事件">
+                深入理解DOM事件 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -362,8 +390,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/06/06/利用position和translate实现水平垂直居中/"
-           data-title="利用position和translate实现水平垂直居中" data-url="http://yoursite.com/2016/06/06/利用position和translate实现水平垂直居中/">
+      <div class="ds-thread" data-thread-key="2016/06/06/用position和translate实现水平垂直居中/"
+           data-title="用position和translate实现水平垂直居中" data-url="http://yoursite.com/2016/06/06/用position和translate实现水平垂直居中/">
       </div>
     
   </div>
@@ -400,7 +428,7 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="http://i2.buimg.com/c19bb343ab82c4d7.jpg"
                alt="Grace" />
           <p class="site-author-name" itemprop="name">Grace</p>
           <p class="site-description motion-element" itemprop="description">纸上得来终觉浅，绝知此事要躬行。</p>
@@ -414,11 +442,18 @@
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -440,6 +475,15 @@
                 </a>
               </span>
             
+              <span class="links-of-author-item">
+                <a href="mailto:1073173650@qq.com" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Email
+                </a>
+              </span>
+            
           
         </div>
 
@@ -458,7 +502,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#场景"><span class="nav-number">2.</span> <span class="nav-text">场景</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#浮动元素"><span class="nav-number">2.1.</span> <span class="nav-text">浮动元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在父容器内水平垂直居中"><span class="nav-number">2.2.</span> <span class="nav-text">在父容器内水平垂直居中</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法"><span class="nav-number">3.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原理"><span class="nav-number">4.</span> <span class="nav-text">原理</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
@@ -491,11 +535,23 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Muse
   </a>
 </div>
 
         
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+  
+</div>
+
+
 
         
       </div>
